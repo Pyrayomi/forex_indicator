@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="Toplevel_login" named="True">
+    <property name="height">200</property>
+    <property name="title" translatable="yes">Forex Indicator</property>
+    <property name="width">200</property>
+    <containerlayout manager="grid">
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="tk.Frame" id="frame1">
+        <property name="background">#081B2E</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <child>
+          <object class="tk.Canvas" id="Canvas_logo" named="True">
+            <property name="background">#081B2E</property>
+            <property name="highlightbackground">#081B2E</property>
+            <property name="highlightcolor">#081B2E</property>
+            <property name="insertbackground">#081B2E</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">nsew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="Entry_login" named="True">
+            <property name="exportselection">true</property>
+            <property name="justify">center</property>
+            <property name="style">Transparent.TEntry</property>
+            <property name="text" translatable="yes">Usuário</property>
+            <property name="textvariable">string:user</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">10</property>
+              <property name="row">1</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="Entry_pwd" named="True">
+            <property name="exportselection">false</property>
+            <property name="justify">center</property>
+            <property name="show">•</property>
+            <property name="style">Transparent.TEntry</property>
+            <property name="text" translatable="yes">Senha</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_login" named="True">
+            <property name="activebackground">#081B2E</property>
+            <property name="activeforeground">#081B2E</property>
+            <property name="background">#081B2E</property>
+            <property name="borderwidth">0</property>
+            <property name="command" type="command" cbtype="simple">bt_entrar_click</property>
+            <property name="image">Entrar.png</property>
+            <property name="text" translatable="yes">ENTRAR</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">10</property>
+              <property name="row">3</property>
+              <property name="sticky">ns</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="frame2">
+            <property name="background">#081B2E</property>
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="ipady">10</property>
+              <property name="row">4</property>
+              <property name="sticky">ns</property>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Button_cadastro" named="True">
+                <property name="activebackground">#081B2E</property>
+                <property name="activeforeground">#3f35f9</property>
+                <property name="background">#081B2E</property>
+                <property name="borderwidth">0</property>
+                <property name="foreground">#ffffff</property>
+                <property name="text" translatable="yes">Cadastre-se aqui</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="label2">
+                <property name="background">#081b2e</property>
+                <property name="foreground">#a5caef</property>
+                <property name="text" translatable="yes">Não tem cadastro ?</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

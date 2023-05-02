@@ -1,0 +1,710 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel_main" named="True">
+    <property name="geometry">640x480</property>
+    <property name="maxsize">800|600</property>
+    <property name="minsize">800|600</property>
+    <property name="title" translatable="yes">Forex Indicator</property>
+    <containerlayout manager="grid">
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="tk.Frame" id="frame_main" named="True">
+        <property name="background">#091b2e</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <containerlayout manager="grid">
+          <property type="col" id="1" name="weight">1</property>
+          <property type="row" id="0" name="weight">1</property>
+        </containerlayout>
+        <child>
+          <object class="tk.Frame" id="frame_esquerdo" named="True">
+            <property name="background">#343D52</property>
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+              <property name="row">0</property>
+              <property name="rowspan">2</property>
+              <property name="sticky">nsw</property>
+            </layout>
+            <child>
+              <object class="tk.Canvas" id="canvas_mini_logo" named="True">
+                <property name="background">#343D52</property>
+                <property name="borderwidth">0</property>
+                <property name="height">74</property>
+                <property name="highlightbackground">#343D52</property>
+                <property name="highlightcolor">#343D52</property>
+                <property name="width">98</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="bt_perfil" named="True">
+                <property name="activebackground">#343D52</property>
+                <property name="activeforeground">#ffffff</property>
+                <property name="background">#343D52</property>
+                <property name="borderwidth">0</property>
+                <property name="font">{Arial} 12 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="image">bt_perfil.png</property>
+                <property name="text" translatable="yes">PERFIL</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">5</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="bt_support" named="True">
+                <property name="activebackground">#343D52</property>
+                <property name="activeforeground">#ffffff</property>
+                <property name="background">#343D52</property>
+                <property name="borderwidth">0</property>
+                <property name="foreground">#ffffff</property>
+                <property name="image">bt_faq.png</property>
+                <property name="text" translatable="yes">SUPPORT</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">5</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="bt_chat" named="True">
+                <property name="activebackground">#343D52</property>
+                <property name="activeforeground">#ffffff</property>
+                <property name="background">#343D52</property>
+                <property name="borderwidth">0</property>
+                <property name="foreground">#ffffff</property>
+                <property name="image">bt_chat.png</property>
+                <property name="text" translatable="yes">SUPPORT</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">5</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Notebook" id="notebook_meio" named="True">
+            <property name="height">200</property>
+            <property name="padding">0</property>
+            <property name="style">NoTabs.TNotebook</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">10</property>
+              <property name="row">0</property>
+              <property name="rowspan">2</property>
+              <property name="sticky">nsew</property>
+            </layout>
+            <child>
+              <object class="ttk.Notebook.Tab" id="tab_indicator" named="True">
+                <property name="sticky">nsew</property>
+                <property name="text" translatable="yes">tab1</property>
+                <child>
+                  <object class="tk.Frame" id="frame_indicator" named="True">
+                    <property name="background">#091b2e</property>
+                    <property name="borderwidth">0</property>
+                    <property name="height">200</property>
+                    <property name="highlightthickness">0</property>
+                    <property name="padx">0</property>
+                    <property name="pady">0</property>
+                    <property name="width">200</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="ipadx">0</property>
+                      <property name="ipady">0</property>
+                      <property name="padx">0</property>
+                      <property name="pady">0</property>
+                      <property name="row">0</property>
+                      <property name="rowspan">2</property>
+                      <property name="sticky">nsew</property>
+                    </layout>
+                    <containerlayout manager="grid">
+                      <property type="col" id="0" name="weight">1</property>
+                      <property type="col" id="1" name="weight">1</property>
+                    </containerlayout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Notebook.Tab" id="tab_perfil" named="True">
+                <property name="sticky">nsew</property>
+                <property name="text" translatable="yes">tab2</property>
+                <child>
+                  <object class="tk.Frame" id="frame_perfil" named="True">
+                    <property name="background">#091b2e</property>
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label1" named="True">
+                        <property name="anchor">e</property>
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 24 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Meu perfil</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">10</property>
+                          <property name="ipady">20</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label2" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Login:</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="row">1</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label8" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">usertest</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">25</property>
+                          <property name="row">2</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label5" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">E-mail:</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="row">3</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label3" named="True">
+                        <property name="anchor">e</property>
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {underline}</property>
+                        <property name="foreground">#479894</property>
+                        <property name="text" translatable="yes">forexindicator@support.com</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">12</property>
+                          <property name="row">4</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label9" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Nome Completo:</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="row">5</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label10" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Usuario de Teste</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">25</property>
+                          <property name="row">6</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label11" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Celular:</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="row">7</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label12" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">+55 (11) 99999-9999</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">25</property>
+                          <property name="row">8</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label13" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Data de Nascimento:</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="row">9</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label14" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">04/09/2013</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">25</property>
+                          <property name="row">10</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="button1">
+                        <property name="activebackground">#2596EF</property>
+                        <property name="activeforeground">#ffffff</property>
+                        <property name="background">#2596EF</property>
+                        <property name="font">{Microsoft Sans Serif} 12 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="overrelief">flat</property>
+                        <property name="relief">flat</property>
+                        <property name="text" translatable="yes">Alterar senha</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="padx">15</property>
+                          <property name="pady">20</property>
+                          <property name="row">11</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Notebook.Tab" id="tab_faq" named="True">
+                <property name="sticky">nsew</property>
+                <property name="text" translatable="yes">tab3</property>
+                <child>
+                  <object class="tk.Frame" id="frame_faq" named="True">
+                    <property name="background">#091b2e</property>
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label_suporte" named="True">
+                        <property name="anchor">e</property>
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 24 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Suporte</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">10</property>
+                          <property name="ipady">20</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label_descricao" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Para dúvidas, problemas e sugestões entrar
+em contato com o nosso time de suporte       </property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">20</property>
+                          <property name="ipady">10</property>
+                          <property name="row">1</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label_email" named="True">
+                        <property name="anchor">e</property>
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold underline}</property>
+                        <property name="foreground">#479894</property>
+                        <property name="text" translatable="yes">forexindicator@support.com</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">10</property>
+                          <property name="row">2</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label_faq" named="True">
+                        <property name="anchor">e</property>
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 24 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">FAQ</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="ipadx">10</property>
+                          <property name="ipady">20</property>
+                          <property name="row">3</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label_pergunta_1" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Pergunta 1:                                                                                                             
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit?                            
+Mauris cursus odio nec erat pretium lacinia. Vivamus fringilla tincidunt libero.
+Pellentesque laoreet felis sapien.                                                                         </property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="padx">20</property>
+                          <property name="row">4</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label_pergunta2" named="True">
+                        <property name="background">#091b2e</property>
+                        <property name="font">{Times New Roman} 12 {bold}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="text" translatable="yes">Pergunta 2:                                                                                                             
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit?                            
+Mauris cursus odio nec erat pretium lacinia. Vivamus fringilla tincidunt libero.
+Pellentesque laoreet felis sapien.                                                                         </property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="padx">20</property>
+                          <property name="pady">30</property>
+                          <property name="row">5</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Notebook.Tab" id="tab_chat" named="True">
+                <property name="sticky">nsew</property>
+                <property name="text" translatable="yes">tab4</property>
+                <child>
+                  <object class="tk.Frame" id="frame_chat" named="True">
+                    <property name="background">#091b2e</property>
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nsew</property>
+                    </layout>
+                    <containerlayout manager="grid">
+                      <property type="col" id="0" name="weight">1</property>
+                      <property type="row" id="0" name="weight">1</property>
+                    </containerlayout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="frame_direito" named="True">
+            <property name="background">#343D52</property>
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+              <property name="row">0</property>
+              <property name="sticky">ns</property>
+            </layout>
+            <child>
+              <object class="tk.Frame" id="frame4">
+                <property name="background">#343D52</property>
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="row">0</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label_relogio" named="True">
+                    <property name="background">#343D52</property>
+                    <property name="font">{arial} 10 {}</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="text" translatable="yes">TEMPO DE VELA</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="padx">6</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Entry" id="entry_tempo" named="True">
+                    <property name="background">#091b2e</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="justify">center</property>
+                    <property name="text" translatable="yes">5m</property>
+                    <property name="width">10</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="frame5">
+                <property name="background">#343D52</property>
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="bt_eurusd" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">EUR/USD</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_usdjpy" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">USD/JPY</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_gbpusd" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">GBP/USD</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_audusd" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">AUD/USD</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_usdchf" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">USD/CHF</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">4</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_gbpjpy" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">GBP/JPY</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_cadchf" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">CAD/CHF</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">6</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_usdcad" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">USD/CAD</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">7</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_eurgbp" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">EUR/GBP</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">8</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="bt_audjpy" named="True">
+                    <property name="activebackground">#343D52</property>
+                    <property name="activeforeground">#ffffff</property>
+                    <property name="background">#343D52</property>
+                    <property name="borderwidth">0</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="overrelief">flat</property>
+                    <property name="relief">flat</property>
+                    <property name="text" translatable="yes">AUD/JPY</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">9</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
